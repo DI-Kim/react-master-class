@@ -56,6 +56,7 @@ const GlobalStyled = createGlobalStyle`
   }
   a {
     text-decoration: none;
+    color: inherit;
   }
 `;
 
