@@ -7,7 +7,8 @@ function Router() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Coins />} />
-        <Route path="/:coinId" element={<Coin />} />
+        {/* nested router 를 사용할 때는 * 을 항상 입력해주자!! */}
+        <Route path="/:coinId/*" element={<Coin />} />
       </Routes>
     </BrowserRouter>
   );
